@@ -36,6 +36,21 @@ const testimonials: Testimonial[] = [
     name: "Eugênio de Carvalho",
     youtubeUrl: "https://youtu.be/Nq_Wcn6ipMk",
   },
+  {
+    id: "5",
+    name: "Sávia Barros Diniz",
+    youtubeUrl: "https://youtu.be/bfd4QyYptZI?si=jTs8iOiI94WjSReP",
+  },
+  {
+    id: "6",
+    name: "Ana Maria Veiga Jardim",
+    youtubeUrl: "https://youtu.be/jM-i98OAXhk?si=JXBxscqAg0sjf3rV",
+  },
+  {
+    id: "7",
+    name: "Sérgio Calura",
+    youtubeUrl: "https://youtu.be/Rj1tOSIvB78?si=39zxbiMFPiKhboqj",
+  },
  
   
 ]
