@@ -22,7 +22,7 @@ export default function Videosec() {
           </div>
         </div><div className="flex justify-center">
           
-          <div className="transform hover:scale-120 transition-all pt-10 flex    duration-300 cursor-pointer w-70  ">
+          <div className="transform hover:scale-120 transition-all pt-10 flex    duration-300 cursor-pointer w-50  ">
               <a href="https://wa.me/5562991873755" target="_blank">
                 <Image width={457} height={111} alt="" src="agendar.png" />
               </a>
