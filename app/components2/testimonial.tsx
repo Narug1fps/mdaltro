@@ -27,7 +27,7 @@ const testimonials: Testimonial[] = [
   },
   {
     id: "3",
-    name: "Nelsina Martins",
+    name: "Nelcina Martins",
     youtubeUrl: "https://youtu.be/p8SCJUWKMow?si=FdrinNSYyUTksdb_",
  
   },
