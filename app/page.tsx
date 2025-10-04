@@ -185,7 +185,8 @@ export default function HomePage() {
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Logo and Tagline Section */}
-          <div className="lg:col-span-2 flex flex-col items-center lg:items-start">
+        
+          <div className="lg:col-span-2 flex flex-col items-center lg:hidden flex ">
             <div className="mb-6">
              
               <Image
@@ -196,14 +197,13 @@ export default function HomePage() {
           className="w-80 py-5"
         />
             </div>
-            <div className="space-y-2 lg:pl-7 text-center lg:text-left">
-              <p className="text-base font-mont italic">Recuperando autoestimas</p>
+            <div className="space-y-2  text-center ">
+              <p className="text-base font-mont italic">Recuperando Autoestimas</p>
               <p className="text-base font-mont italic">Redesenhando Sorrisos</p>
             </div>
           </div>
-
           {/* Contact Information */}
-          <div className="flex flex-col items-center lg:items-start">
+          <div className="flex flex-col items-center lg:text-start justify-center">
             <h3 className="text-lg font-semibold mb-4 text-primary">Contato</h3>
             <div className="space-y-3">
               <a
@@ -222,13 +222,28 @@ export default function HomePage() {
                 <div className="w-10 h-10 rounded-full border border-primary/30 flex items-center justify-center group-hover:border-amber-300  transition-all">
                   <Mail className="w-4 h-4" />
                 </div>
-                <span className="text-sm">contato@marcelodaltro.com.br</span>
+                <span className="text-sm">daltroodonto@gmail.com</span>
               </a>
             </div>
           </div>
-
+          <div className="lg:col-span-2 flex flex-col lg:flex hidden  items-center ">
+            <div className="mb-6">
+             
+              <Image
+          width={3543}
+          height={1181}
+          src="/logo3.png"
+          alt=""
+          className="w-80 py-5"
+        />
+            </div>
+            <div className="space-y-2  text-center ">
+              <p className="text-base font-mont italic">Recuperando Autoestimas</p>
+              <p className="text-base font-mont italic">Redesenhando Sorrisos</p>
+            </div>
+          </div>
           {/* Address */}
-          <div className="flex flex-col items-center lg:items-start pr-10">
+          <div className="flex flex-col items-center justify-center   pr-10">
             <h3 className="text-lg font-semibold mb-4 text-primary">Localização</h3>
             <div className="flex items-start gap-3 group hover:text-amber-300 ">
               <div className="w-10 h-10 rounded-full border border-primary/30 flex items-center justify-center group-hover:border-amber-300 transition-all">
