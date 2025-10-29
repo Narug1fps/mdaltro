@@ -15,7 +15,10 @@ export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
-}>) {
+}>)
+  
+  const GA_ID = process.env.NEXT_PUBLIC_GTAG_ID
+{
   return (
     <html lang="pt-br" className='selection:bg-white bg-black'>
       <head>
