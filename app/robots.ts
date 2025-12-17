@@ -1,21 +1,16 @@
-import { NextResponse } from 'next/server'
+import type { MetadataRoute } from 'next'
 
 const site = 'https://marcelodaltro.com.br'
 
-export async function GET() {
-  const content = `User-agent: *
-Allow: /
-Disallow: /api/private
-
-# Sitemap
-Sitemap: ${site}/sitemap
-
-# Crawl-delay (optional)
-# Crawl-delay: 10
-`
-
-  return new NextResponse(content, {
-    status: 200,
-    headers: { 'Content-Type': 'text/plain; charset=utf-8' },
-  })
+export default function robots(): MetadataRoute.Robots {
+  return {
+    rules: [
+      {
+        userAgent: '*',
+        allow: '/',
+        disallow: '/api/private',
+      },
+    ],
+    sitemap: `${site}/sitemap.xml`,
+  }
 }
