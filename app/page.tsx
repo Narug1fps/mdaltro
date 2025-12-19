@@ -4,14 +4,14 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import Testimonial from "@/app/components2/testimonial";
 import Videosec from "./components2/videosec";
-import {Instagram, Linkedin, Facebook,  Phone, MapPin, Mail} from "lucide-react"
-import { pageview, event } from "@/lib/fpixel";
+import { Instagram, Linkedin, Facebook, Phone, MapPin, Mail } from "lucide-react"
+
 
 
 
 export default function HomePage() {
 
- useEffect(() => {
+  useEffect(() => {
     pageview(); // Rastreia visita da página
   }, []);
 
@@ -75,7 +75,7 @@ export default function HomePage() {
           <div className="container mx-auto px-4 text-center  text-white">
             <div className="relative inline-block flex items-center justify-center"></div>
           </div>
-          
+
         </section>
         <Image
           width={1920}
@@ -85,7 +85,7 @@ export default function HomePage() {
           className="h-3"
         />
         {/* Video Section */}
-      
+
         <Videosec />
         <Image
           width={1920}
@@ -104,7 +104,7 @@ export default function HomePage() {
                 Nossos Serviços
               </h2>
               <p className="text-xl  max-w-2xl mx-auto">
-               
+
               </p>
             </div>
             {services.map((services, index) => (
@@ -156,8 +156,8 @@ export default function HomePage() {
           className="h-3"
         />
         <Testimonial />
-     
-       
+
+
 
         <section className="bg-black">
           <Image
@@ -188,125 +188,125 @@ export default function HomePage() {
           className="h-3"
         />
         {/* Footer */}<footer className="bg-black text-primary">
-      <div className="container mx-auto px-6 py-12">
-        {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-          {/* Logo and Tagline Section */}
-        
-          <div className="lg:col-span-2 flex flex-col items-center lg:hidden flex ">
-            <div className="mb-6">
-             
-              <Image
-          width={3543}
-          height={1181}
-          src="/logo3.png"
-          alt=""
-          className="w-80 py-5"
-        />
-            </div>
-            <div className="space-y-2  text-center ">
-              <p className="text-base font-mont italic">Recuperando Autoestimas</p>
-              <p className="text-base font-mont italic">Redesenhando Sorrisos</p>
-            </div>
-          </div>
-          {/* Contact Information */}
-          <div className="flex flex-col items-center lg:text-start justify-center">
-            <h3 className="text-lg font-semibold mb-4 text-primary">Contato</h3>
-            <div className="space-y-3">
-              <a
-                href="tel:+556299187-3755"
-                className="flex items-center gap-3 hover:text-amber-300 transition-colors group"
-              >
-                <div className="w-10 h-10 rounded-full border border-primary/30 flex items-center justify-center group-hover:border-amber-300  transition-all">
-                  <Phone className="w-4 h-4" />
+          <div className="container mx-auto px-6 py-12">
+            {/* Main Footer Content */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+              {/* Logo and Tagline Section */}
+
+              <div className="lg:col-span-2 flex flex-col items-center lg:hidden flex ">
+                <div className="mb-6">
+
+                  <Image
+                    width={3543}
+                    height={1181}
+                    src="/logo3.png"
+                    alt=""
+                    className="w-80 py-5"
+                  />
                 </div>
-                <span className="text-sm">(62) 99187-3755</span>
+                <div className="space-y-2  text-center ">
+                  <p className="text-base font-mont italic">Recuperando Autoestimas</p>
+                  <p className="text-base font-mont italic">Redesenhando Sorrisos</p>
+                </div>
+              </div>
+              {/* Contact Information */}
+              <div className="flex flex-col items-center lg:text-start justify-center">
+                <h3 className="text-lg font-semibold mb-4 text-primary">Contato</h3>
+                <div className="space-y-3">
+                  <a
+                    href="tel:+556299187-3755"
+                    className="flex items-center gap-3 hover:text-amber-300 transition-colors group"
+                  >
+                    <div className="w-10 h-10 rounded-full border border-primary/30 flex items-center justify-center group-hover:border-amber-300  transition-all">
+                      <Phone className="w-4 h-4" />
+                    </div>
+                    <span className="text-sm">(62) 99187-3755</span>
+                  </a>
+                  <a
+                    href="mailto:contato@marcelodaltro.com.br"
+                    className="flex items-center gap-3 text-primary hover:text-amber-300 transition-colors group"
+                  >
+                    <div className="w-10 h-10 rounded-full border border-primary/30 flex items-center justify-center group-hover:border-amber-300  transition-all">
+                      <Mail className="w-4 h-4" />
+                    </div>
+                    <span className="text-sm">daltroodonto@gmail.com</span>
+                  </a>
+                </div>
+              </div>
+              <div className="lg:col-span-2 flex flex-col lg:flex hidden  items-center ">
+                <div className="mb-6">
+
+                  <Image
+                    width={3543}
+                    height={1181}
+                    src="/logo3.png"
+                    alt=""
+                    className="w-80 py-5"
+                  />
+                </div>
+                <div className="space-y-2  text-center ">
+                  <p className="text-base font-mont italic">Recuperando Autoestimas</p>
+                  <p className="text-base font-mont italic">Redesenhando Sorrisos</p>
+                </div>
+              </div>
+              {/* Address */}
+              <div className="flex flex-col items-center justify-center   pr-10">
+                <h3 className="text-lg font-semibold mb-4 text-primary">Localização</h3>
+                <div className="flex items-start gap-3 group hover:text-amber-300 ">
+                  <div className="w-10 h-10 rounded-full border border-primary/30 flex items-center justify-center group-hover:border-amber-300 transition-all">
+                    <MapPin className="w-4 h-4" />
+                  </div>
+                  <div className="text-sm leading-relaxed  text-start ">
+                    <p>Ed. Walk Bueno Business</p>
+                    <p>R. T-55, 930 </p>
+                    <p>Sala 1608</p>
+                    <p>St. Bueno, Goiânia-GO,</p>
+                    <p>CEP:74215-170</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Social Media Section */}
+            <div className="flex justify-center items-center gap-6 text-primary py-6 border-t border-primary/60">
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 rounded-full border border-primary/30 flex items-center justify-center hover:border-amber-300   transition-all"
+                aria-label="Instagram"
+              >
+                <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="mailto:contato@marcelodaltro.com.br"
-                className="flex items-center gap-3 text-primary hover:text-amber-300 transition-colors group"
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 rounded-full border border-primary/30 flex items-center justify-center hover:border-amber-300   transition-all"
+                aria-label="Facebook"
               >
-                <div className="w-10 h-10 rounded-full border border-primary/30 flex items-center justify-center group-hover:border-amber-300  transition-all">
-                  <Mail className="w-4 h-4" />
-                </div>
-                <span className="text-sm">daltroodonto@gmail.com</span>
+                <Facebook className="w-5 h-5" />
+              </a>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 rounded-full border border-primary/30 flex items-center justify-center hover:border-amber-300   transition-all"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="w-5 h-5" />
               </a>
             </div>
-          </div>
-          <div className="lg:col-span-2 flex flex-col lg:flex hidden  items-center ">
-            <div className="mb-6">
-             
-              <Image
-          width={3543}
-          height={1181}
-          src="/logo3.png"
-          alt=""
-          className="w-80 py-5"
-        />
-            </div>
-            <div className="space-y-2  text-center ">
-              <p className="text-base font-mont italic">Recuperando Autoestimas</p>
-              <p className="text-base font-mont italic">Redesenhando Sorrisos</p>
-            </div>
-          </div>
-          {/* Address */}
-          <div className="flex flex-col items-center justify-center   pr-10">
-            <h3 className="text-lg font-semibold mb-4 text-primary">Localização</h3>
-            <div className="flex items-start gap-3 group hover:text-amber-300 ">
-              <div className="w-10 h-10 rounded-full border border-primary/30 flex items-center justify-center group-hover:border-amber-300 transition-all">
-                <MapPin className="w-4 h-4" />
-              </div>
-              <div className="text-sm leading-relaxed  text-start ">
-                <p>Ed. Walk Bueno Business</p>
-                <p>R. T-55, 930 </p>
-                <p>Sala 1608</p>
-                <p>St. Bueno, Goiânia-GO,</p>
-                <p>CEP:74215-170</p>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        {/* Social Media Section */}
-        <div className="flex justify-center items-center gap-6 text-primary py-6 border-t border-primary/60">
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-12 h-12 rounded-full border border-primary/30 flex items-center justify-center hover:border-amber-300   transition-all"
-            aria-label="Instagram"
-          >
-            <Instagram className="w-5 h-5" />
-          </a>
-          <a
-            href="https://facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-12 h-12 rounded-full border border-primary/30 flex items-center justify-center hover:border-amber-300   transition-all"
-            aria-label="Facebook"
-          >
-            <Facebook className="w-5 h-5" />
-          </a>
-          <a
-            href="https://linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-12 h-12 rounded-full border border-primary/30 flex items-center justify-center hover:border-amber-300   transition-all"
-            aria-label="LinkedIn"
-          >
-            <Linkedin className="w-5 h-5" />
-          </a>
-        </div>
-
-        {/* Copyright */}
-        <div className="text-center pt-6 border-t border-primary/60">
-          <p className="text-sm text-primary">
-            © {new Date().getFullYear()} Marcelo Daltro. Todos os direitos reservados.
-          </p>
-        </div>
+            {/* Copyright */}
+            <div className="text-center pt-6 border-t border-primary/60">
+              <p className="text-sm text-primary">
+                © {new Date().getFullYear()} Marcelo Daltro. Todos os direitos reservados.
+              </p>
+            </div>
+          </div>
+        </footer>
       </div>
-    </footer>
-</div>
     );
   }
 }
