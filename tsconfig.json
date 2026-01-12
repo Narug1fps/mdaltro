@@ -33,7 +33,6 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "lib/fpixel.js",
     ".next/dev/types/**/*.ts"
   ],
   "exclude": [

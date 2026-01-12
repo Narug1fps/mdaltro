@@ -11,11 +11,8 @@ import { Instagram, Linkedin, Facebook, Phone, MapPin, Mail } from "lucide-react
 
 export default function HomePage() {
 
-  useEffect(() => {
-    pageview(); // Rastreia visita da página
-  }, []);
-
   const [isClient, setIsClient] = useState(false);
+
 
   useEffect(() => {
     setIsClient(true);
