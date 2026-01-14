@@ -1,0 +1,13 @@
+node_modules
+.next
+.git
+.github
+.vscode
+.dockerignore
+Dockerfile
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+*.md
+.env*
+! .env.example
